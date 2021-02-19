@@ -1,0 +1,11 @@
+type PoolPrize @entity {
+  id: ID!
+
+  drawId: BigInt!
+  
+  depositCount: BigInt!
+  depositAmount: BigInt!
+
+  withdrawalCount: BigInt!
+  withdrawalAmount: BigInt!
+}

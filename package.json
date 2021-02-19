@@ -1,0 +1,16 @@
+{
+  "name": "pooltogether-graph-one",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "auth": "graph auth https://api.thegraph.com/deploy/",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ akshay090/pool-together-graph-one",
+    "create-local": "graph create --node http://localhost:8020/ akshay090/pool-together-graph-one",
+    "remove-local": "graph remove --node http://localhost:8020/ akshay090/pool-together-graph-one",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 akshay090/pool-together-graph-one"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.17.1",
+    "@graphprotocol/graph-ts": "0.17.0"
+  }
+}
